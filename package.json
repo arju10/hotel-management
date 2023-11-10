@@ -9,17 +9,41 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.0.2"
+    "@sanity/vision": "^3.19.2",
+    "@stripe/stripe-js": "^2.1.11",
+    "@types/node": "20.8.2",
+    "@types/react": "18.2.24",
+    "@types/react-dom": "18.2.8",
+    "autoprefixer": "10.4.16",
+    "axios": "^1.6.1",
+    "chart.js": "^4.4.0",
+    "eslint": "8.53.0",
+    "eslint-config-next": "14.0.2",
+    "next": "^14.0.3-canary.0",
+    "next-auth": "^4.24.4",
+    "next-auth-sanity": "^1.5.3",
+    "next-sanity": "^6.1.0",
+    "postcss": "8.4.31",
+    "react": "18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-datepicker": "^4.21.0",
+    "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^4.11.0",
+    "sanity": "^3.19.2",
+    "stripe": "^14.4.0",
+    "swr": "^2.2.4",
+    "tailwindcss": "3.3.5",
+    "typescript": "5.2.2"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "autoprefixer": "^10.0.1",
+    "autoprefixer": "^10.4.16",
+    "daisyui": "^3.9.4",
     "postcss": "^8",
-    "tailwindcss": "^3.3.0"
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5"
   }
 }
