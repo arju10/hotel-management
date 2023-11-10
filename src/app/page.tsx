@@ -2,14 +2,14 @@ import Image from 'next/image'
 import Header from './components/Header/Header'
 // pages/_app.tsx
 
+import React from 'react';
 
-export default function Home() {
+const Home = () => {
   return (
-<div>
+    <div>
+      
+    </div>
+  );
+};
 
-  <h1>Home</h1>
-</div>
-    
-  
-  )
-}
+export default Home;
