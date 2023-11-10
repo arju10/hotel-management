@@ -1,10 +1,13 @@
 "use client";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Link from "next/link";
 import user_profile from "../../../asstets/images/user-profile.png";
 import Image from "next/image";
+import { MdDarkMode, MdOutlineLightMode } from "react-icons/md";
+import ThemeContext from "@/context/themeContext";
 
 const Header = () => {
+  const { darkTheme, setDarkTheme } = useContext(ThemeContext);
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -46,6 +49,18 @@ const Header = () => {
         >
           Royal Hotel
         </Link>
+
+        {darkTheme ? (
+          <MdOutlineLightMode
+            className="cursor-pointer"
+            onClick={() => setDarkTheme(false)}
+          />
+        ) : (
+          <MdDarkMode
+            className="cursor-pointer"
+            onClick={() => setDarkTheme(true)}
+          />
+        )}
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -117,6 +132,7 @@ const Header = () => {
               <li>
                 <a>Settings</a>
               </li>
+
               <li>
                 <a>Logout</a>
               </li>
